@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dwml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="https://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
+    <head>
+        <product srsName="WGS 1984" concise-name="glance" operational-mode="official">
+            <title>
+                NOAA's National Weather Service Forecast at a Glance
+            </title>
+            <field>meteorological</field>
+            <category>forecast</category>
+            <creation-date refresh-frequency="PT1H">2020-03-22T23:37:09Z</creation-date>
+        </product>
+        <source>
+            <more-information>https://graphical.weather.gov/xml/</more-information>
+            <production-center>
+                Meteorological Development Laboratory
+                <sub-center>Product Generation Branch</sub-center>
+            </production-center>
+            <disclaimer>http://www.nws.noaa.gov/disclaimer.html</disclaimer>
+            <credit>https://www.weather.gov/</credit>
+            <credit-logo>https://www.weather.gov/logorequest</credit-logo>
+            <feedback>https://www.weather.gov/contact</feedback>
+        </source>
+    </head>
+    <data>
+        <location>
+            <location-key>point1</location-key>
+            <point latitude="38.99" longitude="-77.01"/>
+        </location>
+        <moreWeatherInformation applicable-location="point1">https://forecast-v3.weather.gov/point/38.99,-77.01</moreWeatherInformation>
+        <time-layout time-coordinate="local" summarization="none">
+            <layout-key>k-p24h-n1-1</layout-key>
+            <start-valid-time period-name="Tomorrow">2020-03-23T08:00:00-04:00</start-valid-time>
+            <end-valid-time>2020-03-23T20:00:00-04:00</end-valid-time>
+        </time-layout>
+        <time-layout time-coordinate="local" summarization="none">
+            <layout-key>k-p24h-n2-2</layout-key>
+            <start-valid-time period-name="Tonight">2020-03-22T20:00:00-04:00</start-valid-time>
+            <end-valid-time>2020-03-23T09:00:00-04:00</end-valid-time>
+            <start-valid-time period-name="Tomorrow Night">2020-03-23T20:00:00-04:00</start-valid-time>
+            <end-valid-time>2020-03-24T09:00:00-04:00</end-valid-time>
+        </time-layout>
+        <time-layout time-coordinate="local" summarization="none">
+            <layout-key>k-p3h-n9-3</layout-key>
+            <start-valid-time>2020-03-23T02:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T05:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T08:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T11:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T14:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T17:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T20:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T23:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-24T02:00:00-04:00</start-valid-time>
+        </time-layout>
+        <time-layout time-coordinate="local" summarization="none">
+            <layout-key>k-p1h-n24-4</layout-key>
+            <start-valid-time>2020-03-23T01:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T02:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T03:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T04:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T05:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T06:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T07:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T08:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T09:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T10:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T11:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T12:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T13:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T14:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T15:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T16:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T17:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T18:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T19:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T20:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T21:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T22:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-23T23:00:00-04:00</start-valid-time>
+            <start-valid-time>2020-03-24T00:00:00-04:00</start-valid-time>
+        </time-layout>
+        <parameters applicable-location="point1">
+            <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n1-1">
+                <name>Daily Maximum Temperature</name>
+                <value>46</value>
+            </temperature>
+            <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n2-2">
+                <name>Daily Minimum Temperature</name>
+                <value>41</value>
+                <value>41</value>
+            </temperature>
+            <cloud-amount type="total" units="percent" time-layout="k-p3h-n9-3">
+                <name>Cloud Cover Amount</name>
+                <value>96</value>
+                <value>99</value>
+                <value>99</value>
+                <value>99</value>
+                <value>99</value>
+                <value>96</value>
+                <value>72</value>
+                <value>79</value>
+                <value>73</value>
+            </cloud-amount>
+            <weather time-layout="k-p3h-n9-3">
+                <name>Weather Type, Coverage, and Intensity</name>
+                <weather-conditions>
+                    <value coverage="definitely" intensity="light" weather-type="rain" qualifier="none">
+                        <visibility xsi:nil="true"/>
+                    </value>
+                </weather-conditions>
+                <weather-conditions>
+                    <value coverage="definitely" intensity="light" weather-type="rain" qualifier="none">
+                        <visibility xsi:nil="true"/>
+                    </value>
+                </weather-conditions>
+                <weather-conditions>
+                    <value coverage="definitely" intensity="moderate" weather-type="rain" qualifier="none">
+                        <visibility xsi:nil="true"/>
+                    </value>
+                </weather-conditions>
+                <weather-conditions>
+                    <value coverage="definitely" intensity="moderate" weather-type="rain" qualifier="none">
+                        <visibility xsi:nil="true"/>
+                    </value>
+                </weather-conditions>
+                <weather-conditions>
+                    <value coverage="definitely" intensity="moderate" weather-type="rain" qualifier="none">
+                        <visibility xsi:nil="true"/>
+                    </value>
+                </weather-conditions>
+                <weather-conditions>
+                    <value coverage="likely" intensity="moderate" weather-type="rain" qualifier="none">
+                        <visibility xsi:nil="true"/>
+                    </value>
+                </weather-conditions>
+                <weather-conditions/>
+                <weather-conditions/>
+                <weather-conditions/>
+            </weather>
+            <conditions-icon type="forecast-NWS" time-layout="k-p3h-n9-3">
+                <name>Conditions Icons</name>
+                <icon-link>http://forecast.weather.gov/images/wtf/nra100.jpg</icon-link>
+                <icon-link>http://forecast.weather.gov/images/wtf/nra100.jpg</icon-link>
+                <icon-link>http://forecast.weather.gov/images/wtf/ra100.jpg</icon-link>
+                <icon-link>http://forecast.weather.gov/images/wtf/ra100.jpg</icon-link>
+                <icon-link>http://forecast.weather.gov/images/wtf/ra100.jpg</icon-link>
+                <icon-link>http://forecast.weather.gov/images/wtf/ra100.jpg</icon-link>
+                <icon-link>http://forecast.weather.gov/images/wtf/nbkn.jpg</icon-link>
+                <icon-link>http://forecast.weather.gov/images/wtf/nbkn.jpg</icon-link>
+                <icon-link>http://forecast.weather.gov/images/wtf/nbkn.jpg</icon-link>
+            </conditions-icon>
+            <hazards time-layout="k-p1h-n24-4">
+                <name>Watches, Warnings, and Advisories</name>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+                <hazard-conditions/>
+            </hazards>
+        </parameters>
+    </data>
+</dwml>
