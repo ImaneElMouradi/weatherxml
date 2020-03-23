@@ -30,6 +30,7 @@
           This is a simple web application, <i>for displaying the weather</i>.
           This app uses the response (in XML) from
           <a
+            target="_blank"
             href="https://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXML.htm"
             >this website</a
           >
@@ -43,7 +44,7 @@
           <img src="img/location.png" width="40" alt="" /> The location is :
         </h6>
         <div class="location row">
-          <p id="latitude " class="col-6">Latitude :</p>
+          <p id="latitude" class="col-6">Latitude :</p>
           <p id="longitude" class="col-6">Longitude :</p>
         </div>
       </div>
@@ -84,6 +85,51 @@
 
       <footer></footer>
     </div>
+
+    <script type="text/javascript">
+      function loadXMLDoc() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            myFunction(this);
+          }
+        };
+        xmlhttp.open("GET", "xml/data.xml", true);
+        xmlhttp.send();
+      }
+
+      function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+
+        console.log(
+          xmlDoc.getElementsByTagName("cloud-amount")[0].childNodes[3].innerHTML
+        );
+
+        document.getElementById("latitude").innerHTML +=
+          "  " + xmlDoc.getElementsByTagName("point")[0].attributes[0].value;
+        document.getElementById("longitude").innerHTML +=
+          "  " + xmlDoc.getElementsByTagName("point")[0].attributes[1].value;
+
+        document.getElementById("maxtemp").innerHTML +=
+          "  " +
+          xmlDoc.getElementsByTagName("temperature")[0].childNodes[3]
+            .innerHTML +
+          " °C";
+        document.getElementById("mintemp").innerHTML +=
+          "  " +
+          xmlDoc.getElementsByTagName("temperature")[1].childNodes[3]
+            .innerHTML +
+          " °C";
+        document.getElementById("cloud").innerHTML +=
+          "  " +
+          xmlDoc.getElementsByTagName("cloud-amount")[0].childNodes[3]
+            .innerHTML +
+          " %";
+      }
+
+      loadXMLDoc();
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
